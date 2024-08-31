@@ -63,6 +63,12 @@ function guardarDatos( datos ) {
     empleados.push(datos);
     localStorage.setItem("empleados", JSON.stringify(empleados));
     alert("Datos guardados con exito");
+
+    nombreInput.value = "";
+    tipoIdInput.value = "";
+    numeroIdInput.value = "";
+    areaInput.value = "";
+    salarioInput.value = "";
 }
 
 // funcion para extraer los datos guardados previamente en el localStorage
